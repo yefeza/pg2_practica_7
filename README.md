@@ -72,8 +72,7 @@ ahora.
 
 ## Configurando metadatos de project.toml
 
-Abre `pyproject.toml` e ingresa el siguiente contenido. Cambia el `name` por el
-nombre de tu paquete;
+Abre `pyproject.toml` e ingresa el siguiente contenido.
 
 ```toml
 [build-system]
@@ -83,7 +82,9 @@ build-backend = 'setuptools.build_meta:__legacy__'
 
 ## Configurando metadatos en setup.cfg y setup.py
 
-Abre `setup.cfg` e ingresa el siguiente contenido.
+Abre `setup.cfg` e ingresa el siguiente contenido. Cambia el `name` por el
+nombre de tu paquete; asegúrate de que el nombre sea único en PyPI. Puedes
+verificar esto buscando en <https://pypi.org/search/>.
 
 ```ini
 [metadata]
@@ -93,8 +94,8 @@ description = Reemplaza aquí con una descripción corta de tu paquete
 long_description = file:README.md
 long_description_content_type = text/markdown
 url = https://github.com/yefeza/example_package_pg2_tecba
-author = Yeison Fernandez
-author_email = contacto@90horasporsemana.com
+author = TU NOMBRE
+author_email = tucorreo@example.com
 license = MIT
 classifiers =
     Intended Audience :: Developers
@@ -106,7 +107,7 @@ include_package_data = true
 package_dir=
     =src
 packages=find:
-python_requires = >=3.6
+python_requires = >=3.7
 install_requires =
 
 [options.packages.find]

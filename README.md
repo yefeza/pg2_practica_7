@@ -187,7 +187,7 @@ Ahora ejecuta este comando desde el mismo directorio donde se encuentra
 `pyproject.toml`:
 
 ```bash
-python3 -m build
+python -m build
 ```
 
 Este comando debería generar mucho texto y una vez completado debería generar
@@ -251,10 +251,8 @@ Una vez subido, tu paquete debería ser visible en PyPI; por ejemplo:
 Puedes usar `pip` para instalar tu paquete y verificar que funciona. Crea un
 `entorno virtual` e instala tu paquete desde PyPI:
 
-::: tab Unix/macOS
-
 ```bash
-python3 -m pip install example-package-pg2-tecba
+python -m pip install example-package-pg2-tecba
 ```
 
 pip debería instalar el paquete y la salida debería verse algo así:
